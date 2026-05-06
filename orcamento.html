@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Orçamento | V&L Exclusive</title>
+    <title>Sistema de Orçamento | Commerce Studio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
@@ -110,7 +110,7 @@
                 
                 <div class="flex items-center gap-3">
                      <img src="img/Design sem nome.png" 
-                          alt="V&L System" 
+                          alt="Commerce Studio" 
                           class="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:scale-105 transition-transform duration-300">
                     <span class="text-xs font-bold text-[#06b6d4] uppercase tracking-widest border-l border-white/20 pl-3 py-1 hidden sm:block">
                         System
@@ -581,7 +581,7 @@
             const doc = new jsPDF();
             doc.setFontSize(22);
             doc.setTextColor(6, 182, 212); 
-            doc.text('V&L Imports', 20, 20);
+            doc.text('Commerce Studio', 20, 20);
             doc.setTextColor(0, 0, 0);
             doc.setFontSize(16);
             doc.text('Orçamento Oficial', 20, 35);
@@ -608,8 +608,8 @@
             const dados = obterDadosOrcamento();
             if (!dados) return;
             // NÚMERO ATUALIZADO AQUI
-            const numeroLoja = '5561998451844';
-            let msg = `*V&L SYSTEM - NOVO ORÇAMENTO*\n\n`;
+            const numeroLoja = '5561983208744';
+            let msg = `*COMMERCE STUDIO - NOVO ORÇAMENTO*\n\n`;
             msg += `💎 *Interesse:* ${dados.modeloDesejado}\n`;
             if (dados.troca) {
                 msg += `🔄 *Troca:* ${dados.troca.modelo}\n`;
@@ -667,5 +667,4 @@
         atualizarHistorico();
     </script>
 </body>
-
 </html>
